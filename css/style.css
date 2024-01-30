@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@200;400&family=Roboto&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400;1,700&family=Tilt+Neon&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+nav {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    height: 20vh;
+    margin-left: 20px;
+}
