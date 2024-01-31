@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EchoLens | Product</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/button.css">
-</head>
-
-<body id="top">
-    <header>
-        <div id="Logo">
-            <span>
-<svg version="1.1" class="logo_image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#3BB6E7;}
@@ -217,72 +204,3 @@
 		C905.2,325.3,904,312,901.9,299z"/>
 </g>
 </svg>
-            </span>
-            <h1 class="title">EchoLens</h1>
-        </div>
-        <nav>
-            <a>Home</a>
-            <a>Product</a>
-            <a>Over</a>
-            <a>Contact</a>
-            <button class="pushable">
-                <span class="shadow"></span>
-                <span class="edge"></span>
-                <span class="front">
-                  Koop nu
-                </span>
-              </button>
-        </nav>
-    </header>
-    <main>
-        
-<!-- <div id="scrollInfo">Page scrolled: 0px</div> -->
-
-
-        <div id="Title_Brill">
-            <img class="brill_image" src="../img/glasses.png" alt="logo"/>
-            <div>
-                <h1>EchoLens</h1>
-                <h1>Een taal zonder beperkingen.</h1>
-            </div>
-            <a href="#Informatie_brill">
-                <svg class="arrow_down" viewBox="0 0 12 7.41">
-                    <path id="ic_keyboard_arrow_down_24px" d="M7.41,7.84,12,12.42l4.59-4.58L18,9.25l-6,6-6-6Z" transform="translate(-6 -7.84)"/>
-                </svg>
-            </a>
-        </div>
-        <div id="Informatie_brill">
-            <p>
-                Maak kennis met onze baanbrekende EchoLens, een revolutionaire bril die is ontworpen om de communicatiekloof voor doven en slechthorenden te overbruggen. Deze geavanceerde slimme bril zet gesproken woorden naadloos om in duidelijke en expressieve gebarentaal, waardoor er een diepere verbinding ontstaat tussen individuen in de dovengemeenschap.
-            </p>
-            <p>
-                Aangedreven door geavanceerde spraakherkenning en gebaar-trackingtechnologie vertaalt EchoLens gesproken taal naar real-time gesynchroniseerde gebarentaal, discreet weergegeven op een kleine, onopvallende heads-up display. De drager kan moeiteloos gesprekken, presentaties of aankondigingen begrijpen, waardoor ze verbonden blijven in een wereld die vaak afhankelijk is van mondelinge communicatie.
-            </p>
-            <p>
-                Compact en stijlvol zijn deze slimme brillen uitgerust met een gebruiksvriendelijke interface, waardoor dragers hun ervaring eenvoudig kunnen aanpassen. Het apparaat ondersteunt meerdere varianten van gebarentaal, waardoor het toegankelijk en inclusief is voor gebruikers over de hele wereld. Of het nu in een klaslokaal, op de werkplek of tijdens sociale gelegenheden is, EchoLens stelt individuen in staat om actief deel te nemen aan gesprekken.
-            </p>
-            <p>
-                Oplaadbaar en lichtgewicht zijn de EchoLens slimme brillen ontworpen voor dagelijks comfort en langdurig gebruik. Met de nadruk op toegankelijkheid streeft deze innovatieve eyewear ernaar om de kwaliteit van leven voor doven en slechthorenden te verbeteren door communicatiebarrières te doorbreken, begrip te bevorderen en een inclusievere samenleving te bevorderen. Betreed een wereld waar woorden tot leven komen door gebaren, met EchoLens die de weg leidt naar een meer verbonden en toegankelijke toekomst.
-            </p>
-            <a href="#">
-                <div style="display: flex; justify-content: center;">
-                    <svg class="arrow_up" viewBox="0 0 12 7.41">
-                        <path id="ic_keyboard_arrow_up_24px" d="M7.41,15.41,12,10.83l4.59,4.58L18,14,12,8,6,14Z" transform="translate(-6 -8)"/>
-                      </svg>
-                      
-                </div>
-            </a>
-
-        </div>
-        
-        
-    </main>
-    <footer id="Over">
-        <p>Tel: 06 123 456 78</p>
-        <p>Email: klantenservice@echolens.com</p>
-        <p>Straat 7<br>5000AB Tilburg</p>
-    </footer>
-<script src="../js/Scroll.js"></script>
-</body>
-
-</html>

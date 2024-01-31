@@ -4,16 +4,125 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#scrollInfo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+header,footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 0px;
+    box-shadow: 0px 2px 2px rgb(172, 172, 172);
+}
+footer{
+    height: 8vh;
+    box-shadow: 0px -2px 2px rgb(172, 172, 172);
+}
+footer p{
+    margin: 30px;
 }
 
 nav {
-    height: 20vh;
+    height: 15vh;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    /* flex-direction: row; */
+}
+nav a{
+    margin: 30px;
+    user-select: none;
+    transition: 0.15s;
+    color: rgb(50, 50, 50);
+    font-size: 24px;
+    text-decoration: none;
 }
 
-.logo {
-    height: 20vh;
+nav a:hover {
+    opacity: 0.4;
+    cursor: pointer;
+    /* text-decoration: underline; */
+    text-decoration: none;
+}
+
+nav a:active {
+    transform: scale(0.95);
+    text-decoration: none;
+}
+
+nav button {
+    margin: 30px;
+}
+
+@media(max-width:1000px) {
+    nav {
+        display: none;
+    }
+}
+
+.logo_image {
+    height: 10vh;
     margin-left: 20px;
+    margin-right: 10px;
+}
+#Logo {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+}
+.brill_image{
+    width: 60vw;
+}
+#Title_Brill{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#Title_Brill div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.arrow_down, .arrow_up{
+    margin-top: 80px;
+    width: 2.5vw;
+    fill: gray;
+    transition: 0.15s;
+}
+
+.arrow_down:hover, .arrow_up:hover {
+    transform: scale(0.95);
+    fill: rgb(161, 161, 161);
+}
+
+.arrow_down:active, .arrow_up:active {
+    transform: scale(0.90);
+    fill: rgb(161, 161, 161);
+}
+
+#Informatie_brill p{
+    color: rgb(50, 50, 50);
+    font-size: 20px;
+    margin: 25px;
+}
+#Informatie_brill {
+    margin-top: 160px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 100px;
 }
