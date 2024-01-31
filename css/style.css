@@ -30,13 +30,11 @@ header,footer{
     box-shadow: 0px 2px 2px rgb(172, 172, 172);
 }
 footer{
-    height: 8vh;
     box-shadow: 0px -2px 2px rgb(172, 172, 172);
 }
 footer p{
     margin: 30px;
 }
-
 nav {
     height: 15vh;
     display: flex;
@@ -68,16 +66,44 @@ nav button {
     margin: 30px;
 }
 
+#burger-menu {
+    /* border: 2px solid white; */
+    display: none;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 4px black;
+}
+.burger-menu-line {
+    border-radius: 1000px;
+    background-color: #393434;;
+    margin: 5px;
+    height: 10px;
+    width: 40px;
+
+}
+#burger-menu:hover, #burger-menu-panel a:hover{
+    background-color: #3BB6E7;
+}
+
+
 @media(max-width:1000px) {
     nav {
         display: none;
     }
+    /* #burger-menu{
+        display: inline;
+    } */
 }
 
 .logo_image {
     height: 10vh;
     margin-left: 20px;
     margin-right: 10px;
+}
+.title{
+    color: #393434;
+    font-size: 5vh;
 }
 #Logo {
     display: flex;
@@ -122,7 +148,30 @@ nav button {
 }
 #Informatie_brill {
     margin-top: 160px;
-    margin-left: 250px;
-    margin-right: 250px;
+    /* margin-left: 250px;
+    margin-right: 250px; */
+    margin-left: 20vw;
+    margin-right: 20vw;
     margin-bottom: 100px;
+}
+
+@media(max-width:780px) {
+    .brill_image{
+        width: 85vw;
+    }
+    /* #Title_Brill h1{
+        font-size: 50px;
+    } */
+
+    #Informatie_brill {
+        margin-top: 160px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 100px;
+    }
+}
+@media(max-width:450px) {
+    #Title_Brill h1{
+        font-size: 25px;
+    }
 }
