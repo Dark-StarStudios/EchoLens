@@ -19,6 +19,7 @@
 
 body{
     background-color: #F2F2F2;
+    /* min-height: 100vh; */
 }
 
 header,footer{
@@ -30,10 +31,12 @@ header,footer{
     box-shadow: 0px 2px 2px rgb(172, 172, 172);
 }
 footer{
+    width: 100%;
+    height: 100%;
     box-shadow: 0px -2px 2px rgb(172, 172, 172);
 }
 footer p{
-    margin: 30px;
+    margin: 10px;
 }
 nav {
     height: 15vh;
@@ -69,11 +72,13 @@ nav button {
 #burger-menu {
     /* border: 2px solid white; */
     display: none;
+    margin-right: 25px;
     border-radius: 10px;
     width: 50px;
     height: 50px;
-    box-shadow: 0px 0px 4px black;
+    transition: 0.1s;
 }
+
 .burger-menu-line {
     border-radius: 1000px;
     background-color: #393434;;
@@ -82,18 +87,56 @@ nav button {
     width: 40px;
 
 }
+
 #burger-menu:hover, #burger-menu-panel a:hover{
-    background-color: #3BB6E7;
+    box-shadow: 0px 0px 4px black;
 }
 
+#burger-menu:active, #burger-menu-panel a:active {
+    box-shadow: 0px 0px 8px black; 
+}
+
+#burger-menu-panel {
+    display: none;
+    position: absolute;
+    height: auto;
+    background-color: #3BB6E7;
+    /* border: 1px #1d3759 solid;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 90vw; */
+    /* border-top: 1px #1d3759 solid;
+    border-bottom: 1px #1d3759 solid; */
+    width: 100vw;
+}
+
+#burger-menu-panel a {
+    font-size: 50px;
+    background-color: #3BB6E7;
+    color: black;
+    text-align: center;
+    border-radius: 0%;
+    user-select: none;
+}
+
+#burger-menu-panel a:hover {
+    background-color: #393434;
+    color: white;
+    box-shadow: 0px 0px 8px black;
+    position: relative;
+}
+
+#burger-menu-panel a:active {
+    background-color: #474141
+}
 
 @media(max-width:1000px) {
     nav {
         display: none;
     }
-    /* #burger-menu{
+    #burger-menu{
         display: inline;
-    } */
+    }
 }
 
 .logo_image {
@@ -101,35 +144,135 @@ nav button {
     margin-left: 20px;
     margin-right: 10px;
 }
+
 .title{
     color: #393434;
     font-size: 5vh;
+    user-select: none;
 }
+
 #Logo {
     display: flex;
     /* flex-direction: row; */
     align-items: center;
 }
+
 .brill_image{
     width: 60vw;
 }
+
 #Title_Brill{
     margin-top: 25px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 #Title_Brill div{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.arrow_down, .arrow_up{
+
+/* .arrow_down, .arrow_up{
     margin-top: 80px;
     width: 2.5vw;
     fill: gray;
     transition: 0.15s;
+} */
+
+div.arrowDown {
+	width: 6vmin;
+	height: 6vmin;
+	box-sizing: border-box;
+	transform: rotate(-225deg);
+    margin-top: 80px;
+    scale: 0.5;
+	
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		border-width: .8vmin .8vmin 0 0;
+		border-style: solid;
+		border-color: gray;
+		transition: .2s ease;
+		display: block;
+		transform-origin: 100% 0;
+	}
+	
+	&:after {
+		float: left;
+        position: relative;
+		width: 100%;
+		height: 100%;
+		border-width: 0 .8vmin 0 0;
+		border-style: solid;
+		border-color: gray;
+		transform-origin: 100% 0;
+		transition:.2s ease;
+	}
+	
+	&:hover::after {
+		transform: rotate(225deg);
+		border-color: hsl(197, 53%, 58%);
+		height: 120%;
+	}
+	&:hover::before {
+		border-color: hsl(197, 53%, 58%);
+		transform: scale(.8);
+	}	
 }
+
+div.arrowUp {
+	width: 6vmin;
+	height: 6vmin;
+	box-sizing: border-box;
+	transform: rotate(-45deg);
+    margin: 0 auto;
+    margin-top: 80px;
+    scale: 0.5;
+	
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		border-width: .8vmin .8vmin 0 0;
+		border-style: solid;
+		border-color: gray;
+		transition: .2s ease;
+		display: block;
+		transform-origin: 100% 0;
+	}
+
+	
+	&:after {
+		float: left;
+		position: relative;
+		top: -100%;
+		width: 100%;
+		height: 100%;
+		border-width: 0 .8vmin 0 0;
+		border-style: solid;
+		border-color: gray;
+		transform-origin: 100% 0;
+		transition:.2s ease;
+	}
+	
+	&:hover::after {
+		transform: rotate(45deg);
+		border-color: hsl(197, 53%, 58%);
+		height: 120%;
+	}
+	&:hover::before {
+		border-color: hsl(197, 53%, 58%);
+		transform: scale(.8);
+	}
+}
+
+/* @keyframes arrowUp {
+    50%
+} */
 
 .arrow_down:hover, .arrow_up:hover {
     transform: scale(0.95);
@@ -146,6 +289,7 @@ nav button {
     font-size: 20px;
     margin: 25px;
 }
+
 #Informatie_brill {
     margin-top: 160px;
     /* margin-left: 250px;
@@ -153,6 +297,16 @@ nav button {
     margin-left: 20vw;
     margin-right: 20vw;
     margin-bottom: 100px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.video video{
+    border-radius: 15px;
+    width: 50vw;
 }
 
 @media(max-width:780px) {
@@ -169,7 +323,18 @@ nav button {
         margin-right: 5px;
         margin-bottom: 100px;
     }
+
+    .video video{
+        width: 90vw;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
+
 @media(max-width:450px) {
     #Title_Brill h1{
         font-size: 25px;

@@ -1,11 +1,12 @@
 const menu_button = document.getElementById("burger-menu");
 const menu_panel = document.getElementById("burger-menu-panel");
-const x = window.matchMedia("(min-width: 1260px)")
+const x = window.matchMedia("(min-width: 1000px)")
 let key = false;
 
 x.addEventListener("change", function() {
     if(x.matches){
         menu_panel.style.display = "none";
+        key = false;
     }
   }); 
 function Panel(){
