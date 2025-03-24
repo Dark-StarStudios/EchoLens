@@ -4,7 +4,7 @@
 
 GSAP (GreenSock Animation Platform) is een krachtige bibliotheek voor animaties op het web. Het helpt je om CSS-eigenschappen te animeren. In deze workshop leren we de basis van GSAP.
 
-## Opdrachten 0 (GSAP toevoegen)
+## Opdracht 0 (GSAP toevoegen)
 
 Voeg GSAP en de nodige plugins toe aan je HTML-bestand:
 
@@ -13,6 +13,7 @@ Voeg GSAP en de nodige plugins toe aan je HTML-bestand:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/TextPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
 ```
+Type jouw code in de HTML-bestand.
 
 ## Opdracht 1:
 
