@@ -4,6 +4,16 @@
 
 GSAP (GreenSock Animation Platform) is een krachtige bibliotheek voor animaties op het web. Het helpt je om CSS-eigenschappen te animeren. In deze workshop leren we de basis van GSAP.
 
+## Opdrachten 0 (GSAP toevoegen)
+
+Voeg GSAP en de nodige plugins toe aan je HTML-bestand:
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+```
+
 ## Opdracht 1:
 
 Maak een animatie voor een element met de ID `#Logo`. Laat het element van links naar rechts bewegen en zorg ervoor dat het in het begin onzichtbaar is (opacity 0). Gebruik `gsap.from` om dit te doen.
@@ -15,16 +25,6 @@ Maak een animatie voor een afbeelding met de klasse `.brill_image`. Deze animati
 ## Opdracht 3:
 
 Verander de tekst van een element met de klasse .slogan naar "Een taal zonder beperkingen." Laat de tekstverandering duur 2 seconden en voeg een kleine vertraging toe voordat de animatie begint. Gebruik `gsap.to` voor deze opdracht.
-
-## GSAP toevoegen
-
-Voeg GSAP en de nodige plugins toe aan je HTML-bestand:
-
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/TextPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
-```
 
 ## Basis methoden
 
